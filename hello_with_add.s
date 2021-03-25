@@ -1,7 +1,9 @@
-/* Hello-world program.     Print "Hello, assembly!" and exit with code 42. */
+/* Hello-world program.     Print "Hello, assembly!" and exit with code 44. */
 .data
     hello:
         .string "Hello, assembly!\n"
+    fourty_two:
+        .word 44
 
 .text
     .global main
@@ -17,5 +19,7 @@
         bx lr
 
     add_fourty_two:
-        add r0, r0, #42
+        ldr r1, =fourty_two
+        ldr r1, [r1]
+        add r0, r0, r1
         bx lr
