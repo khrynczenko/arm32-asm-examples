@@ -1,4 +1,4 @@
-/* Hello-world program.     Print "Hello, assembly!" and exit with code 44. */
+/* Hello-world program.     Print "Hello, assembly!" and exit with code 42. */
 .data
     hello:
         .string "Hello, assembly!\n"
